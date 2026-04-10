@@ -67,10 +67,10 @@ const Navbar = () => {
                         Categories
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-secondary transition-all duration-300 group-hover:w-full"></span>
                     </span>
-                    <span className="text-gray-200 hover:text-brand-secondary font-medium transition cursor-pointer relative group">
+                    <Link to="/about" className="text-gray-200 hover:text-brand-secondary font-medium transition cursor-pointer relative group">
                         About
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-secondary transition-all duration-300 group-hover:w-full"></span>
-                    </span>
+                    </Link>
                 </div>
 
                 <div className="hidden md:flex space-x-4 items-center">
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <div className="md:hidden bg-[#0B0F19]/95 backdrop-blur-xl px-6 py-4 border-b border-white/10 flex flex-col gap-4 absolute top-full left-0 right-0 shadow-lg">
                     <Link to="/" className="text-white font-medium py-2 border-b border-white/5">Home</Link>
                     <span className="text-white font-medium py-2 border-b border-white/5">Browse NGOs</span>
-                    <span className="text-white font-medium py-2 border-b border-white/5">Categories</span>
+                    <Link to="/about" className="text-white font-medium py-2 border-b border-white/5">About</Link>
                     <Link to="/create" className="text-brand-secondary font-bold py-2">Register Your NGO</Link>
                     <div className="pt-2">
                         {renderWalletButton(true)}
