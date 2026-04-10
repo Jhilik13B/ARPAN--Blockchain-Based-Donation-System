@@ -17,7 +17,7 @@ const Footer = () => {
                         <li><Link to="/" className="hover:text-brand-accent transition">Home</Link></li>
                         <li><Link to="/" className="hover:text-brand-accent transition">Browse NGOs</Link></li>
                         <li><Link to="/create" className="hover:text-brand-accent transition">Register NGO</Link></li>
-                        <li><span className="hover:text-brand-accent transition cursor-pointer">About Us</span></li>
+                        <li><Link to="/about" className="hover:text-brand-accent transition">About Us</Link></li>
                     </ul>
                 </div>
                 <div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Web3Context } from './context/Web3Context';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import About from './pages/About';
 import CampaignDetail from './pages/CampaignDetail';
 import CreateCampaign from './pages/CreateCampaign';
 import AIWhisper from './pages/AIWhisper';
@@ -28,6 +29,7 @@ function App() {
             <main className="flex-grow pt-20">
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
                     <Route path="/campaign/:id" element={<CampaignDetail />} />
                     <Route path="/create" element={<CreateCampaign />} />
                     <Route path="/whisper" element={<AIWhisper />} />
