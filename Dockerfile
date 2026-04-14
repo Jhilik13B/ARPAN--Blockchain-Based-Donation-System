@@ -2,7 +2,7 @@ FROM node:18
 
 WORKDIR /app
 
-COPY chaingive/ .
+COPY . .
 
 # Install backend deps
 RUN npm install
