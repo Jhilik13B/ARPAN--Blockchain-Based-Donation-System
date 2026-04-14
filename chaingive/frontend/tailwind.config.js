@@ -47,4 +47,4 @@ export default {
     },
     plugins: [],
 }
-// Temporary update for Jenkins build refresh
+// Temporary update for Jenkins build refreshed
