@@ -6,7 +6,7 @@ const BottomNav = () => {
         { path: '/', label: 'Home', icon: '🏠' },
         { path: '/whisper', label: 'Whisper', icon: '🎙️' },
         { path: '/recap', label: 'Recap', icon: '📊' },
-        { path: '/inbox', label: 'Inbox', icon: '📬' },
+        { path: '/inbox', label: 'Messages', icon: '📬' },
     ];
 
     return (
@@ -16,9 +16,8 @@ const BottomNav = () => {
                     <NavLink
                         key={item.path}
                         to={item.path}
-                        className={({ isActive }) => 
-                            `flex flex-col items-center gap-1 transition-all duration-300 ${
-                                isActive ? 'text-brand-secondary scale-110 drop-shadow-md' : 'text-gray-400 hover:text-white'
+                        className={({ isActive }) =>
+                            `flex flex-col items-center gap-1 transition-all duration-300 ${isActive ? 'text-brand-secondary scale-110 drop-shadow-md' : 'text-gray-400 hover:text-white'
                             }`
                         }
                     >
